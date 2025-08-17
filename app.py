@@ -13,6 +13,14 @@ similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 st.title('Movie Recommender System')
 
+# Add bold introduction line with effect (larger font size and color)
+st.markdown(
+    "<span style='font-size: 22px; color: #FF5733; font-weight: bold;'>"
+    "hey! my name avisek, i guess your movies basis on your interest in movie"
+    "</span>",
+    unsafe_allow_html=True
+)
+
 selected_movie_name = st.selectbox(
     'Select a movie:',
     movies['title'].values)
